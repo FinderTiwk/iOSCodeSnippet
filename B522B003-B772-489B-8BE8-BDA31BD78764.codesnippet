@@ -3,22 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>strong</string>
+	<string>nowarning</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic,strong) &lt;#Type#&gt; *&lt;#name#&gt;;</string>
+	<string>#pragma clang diagnostic push 
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+&lt;#code#&gt;
+
+#pragma clang diagnostic pop</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E789A3BB-9091-4698-9F31-D2E81A69E0EC</string>
+	<string>B522B003-B772-489B-8BE8-BDA31BD78764</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>忽略未知方法的警告</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>strong属性声明</string>
+	<string>nowarning</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
